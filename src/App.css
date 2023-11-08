@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: rgb(163, 226, 228);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(8, 112, 8);
+  color: white;
+  padding: 20px 12px;
+}
+
+.links {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greet {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.links button {
+  color: white;
+  background-color: rgb(214, 115, 79);
+  padding: 3px 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.links button:hover {
+  color: black;
+  background-color: cadetblue;
+}
+
+.todo-form {
+  width: 260px;
+  background-color: rgb(69, 163, 69);
+  padding: 10px;
+  margin: 35px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px black;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  padding: 3px 4px;
+  font-size: 0.9rem;
+}
+
+button[type="submit"] {
+  margin: 20px 0 5px 0;
+  background-color: rgb(224, 157, 13);
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: orange;
+  color: black;
+}
+
+.todo-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.msg {
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: lightblue;
+  border-radius: 6px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  background-color: darkblue;
+  color: white;
+  width: 285px;
+  padding: 22px 10px 10px 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.bx {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.bx:hover {
+  color: rgb(216, 103, 103);
+}
+
+.form {
+  background-color: goldenrod;
+  padding: 15px;
+  border-radius: 7px;
+  width: 320px;
+  margin: 6% auto;
+  position: relative;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.form.login button {
+  background-color: rgb(16, 94, 158);
+}
+
+.form.login button:hover {
+  background-color: lightblue;
+}
+
+.form.signup {
+  background-color: steelblue;
+}
+
+.errBox {
+  margin: 8% auto;
+  width: 23%;
+}
+
+.errMsg {
+  background-color: rgb(211, 49, 49);
+  color: white;
+  font-weight: 700;
+  padding: 3px 5px;
+  border-radius: 4px;
+  text-align: center;
+}
