@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+   //by using the trim method trailing whitespace is removed from the end of the username and the password
     await login(username.trim(), password.trim());
   };
 
