@@ -31,7 +31,11 @@ const Login = () => {
             value={password}
           />
         </div>
-        <button type="submit" disabled={isLoading}>
+        <button
+          type="submit"
+          className={isLoading ? "loading" : ""}
+          disabled={isLoading}
+        >
           Log in
         </button>
       </form>

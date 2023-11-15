@@ -31,7 +31,11 @@ const Signup = () => {
             value={password}
           />
         </div>
-        <button type="submit" disabled={isLoading}>
+        <button
+          type="submit"
+          className={isLoading ? "loading" : ""}
+          disabled={isLoading}
+        >
           Sign up
         </button>
       </form>

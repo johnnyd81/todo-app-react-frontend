@@ -67,7 +67,7 @@ input {
 
 button[type="submit"] {
   margin: 20px 0 5px 0;
-  background-color: rgb(224, 157, 13);
+  background-color: black;
   border: none;
   font-size: 1.05rem;
   font-weight: 600;
@@ -77,9 +77,8 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
-  background-color: orange;
-  color: black;
+.loading {
+  background-color: rgb(115, 103, 189) !important;
 }
 
 .todo-box {
@@ -133,18 +132,6 @@ button[type="submit"]:hover {
   justify-content: space-between;
   align-items: center;
   margin: 2px 0;
-}
-
-.form.login button {
-  background-color: rgb(16, 94, 158);
-}
-
-.form.login button:hover {
-  background-color: lightblue;
-}
-
-.form.signup {
-  background-color: steelblue;
 }
 
 .errBox {
